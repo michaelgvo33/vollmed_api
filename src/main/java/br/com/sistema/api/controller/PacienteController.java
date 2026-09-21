@@ -1,15 +1,14 @@
 package br.com.sistema.api.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.GetMapping;
-
 
 @RestController
-@RequestMapping("paciente") // Define o caminho base para os endpoints do controlador
-
-public class PacienteController {
-      // GET Request -> Response -> Ex: Tela home
+@RequestMapping("paciente")
+public class PacienteController { 
+    
+    // GET Request -> Response -> Ex: Tela home
     @GetMapping("/") // Aponta para localhost:8080/paciente
     public String exibirHome() {
         return "a";
@@ -26,3 +25,4 @@ public class PacienteController {
     // CRUD 
     
 }
+

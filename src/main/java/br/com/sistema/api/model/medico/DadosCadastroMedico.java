@@ -1,5 +1,15 @@
 package br.com.sistema.api.model.medico;
 
-public class DadosCadastroMedico {
+import br.com.sistema.api.model.endereco.DadosCadastroEndereco;
+
+// DTO do cadastro das informações do médico
+public record DadosCadastroMedico(
+    String nome,
+    String email,
+    String crm,
+    String telefone,
+    Especialidade especialidade,
+    DadosCadastroEndereco endereco
+) {
     
 }
