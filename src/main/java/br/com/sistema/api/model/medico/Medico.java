@@ -47,10 +47,10 @@ public class Medico {
     // Método que checa se o nome, email ou endereco estã como null
     public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
         if (dados.nome() != null) {
-            this.nome = (String) dados.nome();
+            this.nome = dados.nome();
         }
         if (dados.email() != null) {
-            this.email = (String) dados.email();
+            this.email = dados.email();
         }
         if (dados.endereco() != null) {
             this.endereco.atualizarInformacoes(dados.endereco());

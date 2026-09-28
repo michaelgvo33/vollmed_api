@@ -1,6 +1,5 @@
 package br.com.sistema.api.model.endereco;
 
-import br.com.sistema.api.model.medico.DadosCadastroMedico;
 import jakarta.persistence.Embeddable;
 import lombok.*;
 

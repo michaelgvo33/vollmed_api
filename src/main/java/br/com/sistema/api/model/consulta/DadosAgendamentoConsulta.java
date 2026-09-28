@@ -1,5 +1,14 @@
 package br.com.sistema.api.model.consulta;
 
-public class DadosAgendamentoConsulta {
-    
+import java.time.LocalDateTime;
+
+public record DadosAgendamentoConsulta (
+    Integer MedicoId,
+    Integer PacienteId,
+    String observacao,
+    Status status,
+    LocalDateTime data
+) 
+
+    {
 }

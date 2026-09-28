@@ -2,7 +2,6 @@ package br.com.sistema.api.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import br.com.sistema.api.model.medico.DadosAtualizacaoMedico;
@@ -15,8 +14,11 @@ import jakarta.transaction.Transactional;
 @RequestMapping("medico")
 public class MedicoController {
 
-    @Autowired
-    private MedicoRepository medicoRepository;
+    private final MedicoRepository medicoRepository;
+
+    MedicoController(MedicoRepository medicoRepository) {
+        this.medicoRepository = medicoRepository;
+    }
 
     // CRUD BÁSICO
     @PostMapping("/cadastro") // localhost:8080/medico/cadastro
