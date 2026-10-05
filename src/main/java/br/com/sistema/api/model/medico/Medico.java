@@ -58,3 +58,8 @@ public class Medico {
     }
 
 }
+
+// stream ()
+// map ()
+// filter ()
+// list ()
